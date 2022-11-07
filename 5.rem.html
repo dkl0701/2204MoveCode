@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 1rem;
+        }
+        /* rem是对于根节点font-size大小  html的 */
+        /* 相对上级元素的font-size */
+        .a{
+            /* 2rem */
+            font-size: 20px;
+            /* 10rem 宽 */
+            width: 100px;
+
+        }
+        .b{
+            /* 2rem */
+            font-size: 20px;
+            /* 20rem 宽 */
+            width: 200px;
+
+        }
+        .c{
+            /* 2rem */
+            font-size: 20px;
+            /* 30rem 宽 */
+            width: 300px;
+        }
+       </style>
+</head>
+<body>
+    <div class="a">
+        练习相对长度
+        <div class="b">
+            我是div的b
+            <div class="c">
+                我是div的c
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // rem 的适配
+    // 大屏幕的字大一些，小屏幕的字小一些
+    function setRem(){
+        var ui_w=375;//ui设计师给的宽默认iphone6的37.5rem
+        var client_w=document.documentElement.clientWidth||document.body.clien
+        var html=document.getElementsByTagName('html')[0];//设备的屏幕宽度，兼容ie
+        html.style.fontSize=(client_w/ui_w)*10+'px';
+    }
+    window.onresize=setRem();
+</script>
