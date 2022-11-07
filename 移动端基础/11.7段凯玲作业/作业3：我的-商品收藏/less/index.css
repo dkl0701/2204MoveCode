@@ -1,0 +1,149 @@
+/* 清空默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background: white;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.nav {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #e6071b;
+  overflow: hidden;
+}
+.nav > .back {
+  width: 4rem;
+  height: 4rem;
+  background: url(../images/back.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav > span {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 2px;
+  margin: -1rem 0 0 -20%;
+  border: 1px solid white;
+}
+.nav > span > a {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  float: left;
+}
+.nav > span > .active {
+  color: red;
+  background-color: white;
+  font-weight: 500;
+}
+.nav > .clear {
+  float: right;
+  color: white;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.content {
+  width: 100%;
+  background: white;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+.content ul {
+  width: 100%;
+  list-style: none;
+}
+.content ul > li {
+  width: 100%;
+  padding: 1rem 0;
+  height: 8rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d6d1d1;
+}
+.content ul > li > .left {
+  float: left;
+  position: relative;
+  height: 6rem;
+}
+.content ul > li > .left > .pic {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content ul > li > .left > .no {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 2;
+}
+.content ul > li > .right {
+  padding-left: 7rem;
+}
+.content ul > li > .right > p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333131;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content ul > li > .right > span {
+  display: inline-block;
+  color: #696161;
+}
+.content ul > li > .right > span > .big {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.content ul > li > .right > span > .red {
+  color: red;
+}
+.content ul > li > .right > .sign {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.content ul > li > .right > .sign-line {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+.content ul > li > .right > .look {
+  width: 6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #696161;
+  float: right;
+  border: 1px solid #cec8c8;
+}
