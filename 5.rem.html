@@ -53,8 +53,9 @@
     // rem 的适配
     // 大屏幕的字大一些，小屏幕的字小一些
     function setRem(){
-        var ui_w=375;//ui设计师给的宽默认iphone6的37.5rem
-        var client_w=document.documentElement.clientWidth||document.body.clien
+        // 移动端测试，默认以iphone6的宽375为标准 
+        var ui_w=375;//ui设计师给的宽默认iphone6的375px
+        var client_w=document.documentElement.clientWidth||document.body.clienWidth;
         var html=document.getElementsByTagName('html')[0];//设备的屏幕宽度，兼容ie
         html.style.fontSize=(client_w/ui_w)*10+'px';
     }
