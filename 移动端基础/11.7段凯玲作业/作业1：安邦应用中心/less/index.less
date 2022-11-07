@@ -1,0 +1,170 @@
+/* 清空默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 封装变量
+.border(@wid: 1.5px, @col: rgb(229, 225, 225)) {
+    border-top: @wid solid @col;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 网页背景颜色 */
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: rgb(242, 242, 242);
+    .border;
+    // padding-left: 1rem;
+
+    &>span {
+        display: inline-block;
+        width: 2.5rem;
+        height: 4rem;
+        line-height: 2.5rem;
+        background: url(../image/icon_back.png) no-repeat center;
+        background-size: 50%;
+        .fl;
+    }
+
+    &>h1 {
+        font-size: 2rem;
+        color: rgb(64, 133, 255);
+        font-weight: 400;
+        display: inline-block;
+        line-height: 4rem;
+        .fl;
+
+    }
+}
+
+main {
+    width: 100%;
+    height: 17rem;
+    //    padding-left: 1rem;
+
+    background-color: rgb(255, 255, 255);
+
+    &>dl {
+        .border;
+        height: 9rem;
+
+
+        &::after {
+            clear: both;
+            overflow: hidden;
+            content: '';
+        }
+
+        &>img {
+            display: inline-block;
+            width: 6.5rem;
+            height: 6.5rem;
+            margin-top: 1.25rem;
+            .fl;
+            margin-left: 1rem;
+        }
+
+        &>.title {
+            font-size: 1.6rem;
+            color: rgb(96, 94, 94);
+            margin-top: 2rem;
+            padding-left: 8rem;
+            line-height: 2rem;
+        }
+
+        &>.num {
+            font-size: 1.2rem;
+            color: rgb(71, 70, 70);
+            font-weight: 550;
+            line-height: 2rem;
+            padding-left: 8rem;
+        }
+
+        &>.btn {
+            .fr;
+            width: 4rem;
+            height: 2.5rem;
+            margin-right: 2rem;
+            border: 1px solid rgb(0, 120, 255);
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            &>a {
+                font-size: 1.2rem;
+                color: rgb(0, 120, 255);
+            }
+        }
+
+        &>.introduce {
+            font-size: 1.4rem;
+            color: rgb(77, 76, 76);
+            margin-top: 1rem;
+            text-indent: 2rem;
+            line-height: 3rem;
+        }
+
+        &>.text {
+            line-height: 1.5rem;
+            font-size: 0.8rem;
+            padding-left: 2rem;
+            color: rgb(82, 77, 77);
+
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    .border;
+    height: 4rem;
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+
+    &>a {
+        display: inline-block;
+        width: 33%;
+        line-height: 4rem;
+        .fl;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    &>.a1 {
+        background: url(../image/btn_01-1.png) no-repeat center 0px;
+        background-size: 8%;
+        color: rgb(0, 120, 255);
+    }
+
+    &>.a2 {
+        background: url(../image/btn_02.png) no-repeat center 0px;
+        background-size: 8%;
+
+
+    }
+
+    &>.a3 {
+        background: url(../image/btn_03.png) no-repeat center 0px;
+        background-size: 8%;
+
+
+    }
+
+}

@@ -1,0 +1,133 @@
+/* 清空默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 网页背景颜色 */
+body {
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #f2f2f2;
+  border-top: 1.5px solid #e5e1e1;
+}
+header > span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 4rem;
+  line-height: 2.5rem;
+  background: url(../image/icon_back.png) no-repeat center;
+  background-size: 50%;
+  float: left;
+}
+header > h1 {
+  font-size: 2rem;
+  color: #4085ff;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 4rem;
+  float: left;
+}
+main {
+  width: 100%;
+  height: 17rem;
+  background-color: #ffffff;
+}
+main > dl {
+  border-top: 1.5px solid #e5e1e1;
+  height: 9rem;
+}
+main > dl::after {
+  clear: both;
+  overflow: hidden;
+  content: '';
+}
+main > dl > img {
+  display: inline-block;
+  width: 6.5rem;
+  height: 6.5rem;
+  margin-top: 1.25rem;
+  float: left;
+  margin-left: 1rem;
+}
+main > dl > .title {
+  font-size: 1.6rem;
+  color: #605e5e;
+  margin-top: 2rem;
+  padding-left: 8rem;
+  line-height: 2rem;
+}
+main > dl > .num {
+  font-size: 1.2rem;
+  color: #474646;
+  font-weight: 550;
+  line-height: 2rem;
+  padding-left: 8rem;
+}
+main > dl > .btn {
+  float: right;
+  width: 4rem;
+  height: 2.5rem;
+  margin-right: 2rem;
+  border: 1px solid #0078ff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+main > dl > .btn > a {
+  font-size: 1.2rem;
+  color: #0078ff;
+}
+main > dl > .introduce {
+  font-size: 1.4rem;
+  color: #4d4c4c;
+  margin-top: 1rem;
+  text-indent: 2rem;
+  line-height: 3rem;
+}
+main > dl > .text {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  color: #524d4d;
+}
+footer {
+  width: 100%;
+  border-top: 1.5px solid #e5e1e1;
+  height: 4rem;
+  background-color: #f8f8f8;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+}
+footer > a {
+  display: inline-block;
+  width: 33%;
+  line-height: 4rem;
+  float: left;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+footer > .a1 {
+  background: url(../image/btn_01-1.png) no-repeat center 0px;
+  background-size: 8%;
+  color: #0078ff;
+}
+footer > .a2 {
+  background: url(../image/btn_02.png) no-repeat center 0px;
+  background-size: 8%;
+}
+footer > .a3 {
+  background: url(../image/btn_03.png) no-repeat center 0px;
+  background-size: 8%;
+}
