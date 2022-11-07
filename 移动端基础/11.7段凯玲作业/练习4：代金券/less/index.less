@@ -1,0 +1,203 @@
+/* 清空默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+// 封装变量
+.border(@wid: 1.5px, @col: rgb(229, 225, 225)) {
+    border-bottom: @wid solid @col;
+}
+
+.fl {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 47, 47);
+    display: block;
+    .border;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(230, 7, 27);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    &>span {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        background: url(../images/back.png) no-repeat 0px 2px;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+
+    &>h1 {
+        color: white;
+        font-size: 2rem;
+        line-height: 4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.my-coupon {
+    width: 100%;
+    // margin-top: 4rem;
+    margin-top: -1rem;
+    box-sizing: border-box;
+    height: 18rem;
+
+    &>.gear-top {
+        display: block;
+        width: 100%;
+        height: 1.6rem;
+        position: relative;
+        z-index: 2;
+        background: url(../images/border.png) repeat;
+    }
+
+    &>.coupon-content {
+        padding: 1rem;
+        margin-top: -7px;
+        height: 100%;
+        width: 100%;
+        background: white;
+        box-sizing: border-box;
+        position: relative;
+
+        &>.content-left {
+            width: 80%;
+
+
+            &>img {
+                margin-right: 0.5rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 50%;
+                .fl;
+            }
+
+            &>.text {
+                height: 6rem;
+                &>.name {
+                    color: rgb(39, 38, 38);
+                    font-weight: 600;
+                    font-size: 1.6rem;
+
+                }
+
+                &>span {
+                    line-height: 2rem;
+                    color: rgb(103, 102, 102);
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &>.content-right {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            color: white;
+            font-size: 1.2rem;
+            background: rgb(230, 7, 27);
+            padding: 0.2rem 1rem;
+        }
+
+        &>.ok-use {
+            position: absolute;
+            right: 2rem;
+            top: 2.5rem;
+            transform: rotate(-30deg);
+            color: gray;
+            font-size: 1.2rem;
+            border: 1px solid #d5d5d5;
+            background: white;
+            padding: 0.2rem 1rem;
+        }
+
+        &>.line {
+            margin-top: 1rem;
+            position: relative;
+            width: 100%;
+            height: 1px;
+            background: rgb(213, 209, 209);
+
+
+            &>span {
+                display: inline-block;
+                position: absolute;
+                height: 1.7rem;
+                width: 1.7rem;
+                background-color: rgb(238, 238, 238);
+                border-radius: 50%;
+            }
+
+            &>span:nth-of-type(1) {
+                left: -2rem;
+                top: -1rem;
+            }
+
+            &>span:nth-of-type(2) {
+                right: -2rem;
+                top: -1rem;
+            }
+        }
+
+        &>.coupon-num {
+            height: 3rem;
+            line-height: 3rem;
+
+            &>span {
+                display: inline-block;
+                // width: 3.5rem;
+                height: 100%;
+                text-align: center;
+                color: #666;
+                font-size: 1.4rem;
+                .fl;
+            }
+
+            &>.red {
+                color: rgb(230, 7, 27);
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &>.gear-bottom {
+        display: block;
+        margin-top: -0.8rem;
+        width: 100%;
+        height: 1.6rem;
+        background: url(../images/border.png) repeat;
+    }
+}
+
+.top {
+    padding: 5rem 1rem 0;
+}
+
+.center {
+    padding: 0 1rem;
+}

@@ -1,0 +1,166 @@
+/* 清空默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+}
+body {
+  background-color: #eeeeee;
+}
+.fl {
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: #302f2f;
+  display: block;
+  border-bottom: 1.5px solid #e5e1e1;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #e6071b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+header > span {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: url(../images/back.png) no-repeat 0px 2px;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header > h1 {
+  color: white;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.my-coupon {
+  width: 100%;
+  margin-top: -1rem;
+  box-sizing: border-box;
+  height: 18rem;
+}
+.my-coupon > .gear-top {
+  display: block;
+  width: 100%;
+  height: 1.6rem;
+  position: relative;
+  z-index: 2;
+  background: url(../images/border.png) repeat;
+}
+.my-coupon > .coupon-content {
+  padding: 1rem;
+  margin-top: -7px;
+  height: 100%;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
+  position: relative;
+}
+.my-coupon > .coupon-content > .content-left {
+  width: 80%;
+}
+.my-coupon > .coupon-content > .content-left > img {
+  margin-right: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  float: left;
+}
+.my-coupon > .coupon-content > .content-left > .text {
+  height: 6rem;
+}
+.my-coupon > .coupon-content > .content-left > .text > .name {
+  color: #272626;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.my-coupon > .coupon-content > .content-left > .text > span {
+  line-height: 2rem;
+  color: #676666;
+  font-size: 1.6rem;
+}
+.my-coupon > .coupon-content > .content-right {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  background: #e6071b;
+  padding: 0.2rem 1rem;
+}
+.my-coupon > .coupon-content > .ok-use {
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
+  transform: rotate(-30deg);
+  color: gray;
+  font-size: 1.2rem;
+  border: 1px solid #d5d5d5;
+  background: white;
+  padding: 0.2rem 1rem;
+}
+.my-coupon > .coupon-content > .line {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #d5d1d1;
+}
+.my-coupon > .coupon-content > .line > span {
+  display: inline-block;
+  position: absolute;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+.my-coupon > .coupon-content > .line > span:nth-of-type(1) {
+  left: -2rem;
+  top: -1rem;
+}
+.my-coupon > .coupon-content > .line > span:nth-of-type(2) {
+  right: -2rem;
+  top: -1rem;
+}
+.my-coupon > .coupon-content > .coupon-num {
+  height: 3rem;
+  line-height: 3rem;
+}
+.my-coupon > .coupon-content > .coupon-num > span {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 1.4rem;
+  float: left;
+}
+.my-coupon > .coupon-content > .coupon-num > .red {
+  color: #e6071b;
+  font-size: 1.6rem;
+}
+.my-coupon > .gear-bottom {
+  display: block;
+  margin-top: -0.8rem;
+  width: 100%;
+  height: 1.6rem;
+  background: url(../images/border.png) repeat;
+}
+.top {
+  padding: 5rem 1rem 0;
+}
+.center {
+  padding: 0 1rem;
+}
