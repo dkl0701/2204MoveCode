@@ -1,0 +1,79 @@
+/* 清空默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eeeeee;
+}
+.fl {
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: #302f2f;
+  display: block;
+  border-bottom: 1.5px solid #e5e1e1;
+}
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: #e6071b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.header > span {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: url(../images/back.png) no-repeat 0px 2px;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header > h1 {
+  color: white;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.content {
+  width: 100%;
+  padding-top: 4rem;
+  box-sizing: border-box;
+}
+.content > a {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  border-bottom: 1.5px solid #e5e1e1;
+}
+.content .clear {
+  margin-bottom: 1rem;
+  border: none;
+}
+.content .clear .new {
+  border: none;
+}
+.btn {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: white;
+  margin: 1.5rem 0;
+}
+.btn > a {
+  color: #e6071b;
+  font-size: 1.6rem;
+}

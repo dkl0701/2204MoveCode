@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./less/index.css">
+</head>
+<body>
+    <div class="header">
+        <span></span>
+        <h1>设置</h1>
+    </div>
+    <div class="content">
+        <a href="#">个人信息</a>
+        <a href="#" class="clear">清空缓存</a>
+        <a href="#">关于我们</a>
+        <a href="#">意见反馈</a>
+        <a href="#" class="new">检查更新</a>
+    </div>
+    <div class="btn">
+        <a href="#">退出当前账号</a>
+    </div>
+</body>
+</html>
+<script>
+     function setRem() {
+        // 移动端测试，默认以iphone6的宽375为标准 
+        var ui_w = 375;//ui设计师给的宽默认iphone6的375px
+        var client_w = document.documentElement.clientWidth || document.body.clienWidth;//设备的屏幕宽度，兼容ie
+        var html = document.getElementsByTagName('html')[0];
+        html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+    }
+    window.onresize = setRem();
+</script>

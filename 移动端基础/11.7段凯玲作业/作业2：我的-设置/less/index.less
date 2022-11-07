@@ -1,0 +1,96 @@
+/* 清空默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+// 封装变量
+.border(@wid: 1.5px, @col: rgb(229, 225, 225)) {
+    border-bottom: @wid solid @col;
+}
+
+.fl {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 47, 47);
+    display: block;
+    .border;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(230, 7, 27);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    &>span {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        background: url(../images/back.png) no-repeat 0px 2px;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+
+    &>h1 {
+        color: white;
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.content {
+    width: 100%;
+    padding-top: 4rem;
+    box-sizing: border-box;
+
+    &>a {
+        background-color: white;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        width: 100%;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.6rem;
+        .border;
+
+    }
+
+    .clear {
+        margin-bottom: 1rem;
+        border: none;
+
+        .new {
+            border: none;
+        }
+    }
+}
+.btn {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: white;
+margin: 1.5rem 0;
+    &>a {
+        color: rgb(230, 7, 27);
+        font-size: 1.6rem;
+    }
+}
